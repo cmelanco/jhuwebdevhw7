@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Beartooth Hiking Company</title>
+<link href="homework7.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="tourlength.js"></script>
+<script type="text/javascript" src="datepicker.js"></script>
+
+</head>
+
+<body bgcolor="#00CCFF" text="#000000" link="#0000EE"
+vlink="#551A8B" alink="#FF0000" onload='setDates()'>
+<img class="center" src="Images/Beartooth002-01.jpg" alt="Beartooth" width="600" height="131"/>
+<h1 class = "BigCenter">Beartooth Hiking Company</h1>
+<p class="NormalCenter">
+Come enjoy the great outdoors with the <span class="NormalBold"> Beartooth Hiking Company</span>!!!
+</p>
+<p class = "padlr">
+Experience life outside of the city with the wonderful Beartooth Hiking Company.
+We will take back to the simpler time when it was man vs. nature.
+Come learn how to survive in the wild. Build a fire from actual wood.  
+Learn how to make blanket from real bears with our patented bear skinning techniques.
+Catch fish from a real-life river.
+</p>
+<div class="padlr">
+<img src="Images/TetonTrail-2_800x600.jpg" alt="Teton Trail" width="200" height="150" align="right"/>
+<h3 class="Big">Come join us for some amazing hiking tours including:</h3>
+<ul>
+<li>Gardiner Lake </li>
+<li>Hellroaring Plateau </li>
+<li>The Beaten Path </li>
+</ul>
+</div>
+<div class = "padall">
+<a href="http://www.rei.com"> Check out REI for some great hiking equipment </a> 
+</div>
+<div class= "padall">
+<a href="http://en.wikipedia.org/wiki/Hiking"> So what is hiking?</a> 
+</div>
+<div class = "padlr">
+<img src="Images/BeartoothIslandLakeTrail_0326_800x600.jpg" alt="Beartooth Island" width="200" height="150" align="right"/>
+<h3 class="Big">We have many affordable options for the whole family!</h3>
+<table width="600" border="3">
+<tr>
+   <td> <div align="center"> Hiking Tour </div></td>
+   <td> <div align="center"> Duration </div></td>
+   <td> <div align="center"> Intensity </div></td>
+   <td> <div align="center"> Cost* </div></td>
+</tr>
+<tr>
+   <td> Gardiner Lake </td>
+   <td> 3 or 5 days </td>
+   <td> Intermediate </td>
+   <td> $40/day </td>
+</tr>
+<tr>
+   <td> Hellroaring Plateau </td>
+   <td> 2, 3, or 4 days </td>
+   <td> Easy </td>
+   <td> $35/day </td>
+</tr>
+<tr>
+   <td> Beaten Path </td>
+   <td> 5 or 7 days </td>
+   <td> Difficult </td>
+   <td> $45/day </td>
+</tr>
+</table>  
+*All hikes have a 50% surcharge for Sat/Sun hikes
+</div>
+<div class = "padall">
+<a href="http://www.wilderness.net/index.cfm?fuse=NWPS&amp;sec=wildView&amp;WID=1">For more information about the great outdoors...</a> 
+</div>
+<div class = "padall">
+<form name="hikepicker" action="http://web7.apl.jhu.edu/melancon_homework8/TourCostServlet" method=get>
+<fieldset>
+<legend><h3 class="Big">Book your tour now!</h3></legend>
+Start Date:
+<select name="months" onchange='setDays()'></select>
+<select name="days"></select>
+<select name="years" onchange='setDays()'></select>
+
+<br>
+</br>
+Tour: <select name="hike" onchange="setTourLength(this.value)">
+<option value="gardiner">Gardiner Lake</option>
+<option value="hellroaring">Hellroaring Plateau</option>
+<option value="beaten">Beaten Path</option>
+</select>
+# of days:
+<select name="numdays">
+<option value="3">3 days</option>
+<option value="5">5 days</option>
+</select>
+<br></br>
+# of people:
+<select name="numpeople">
+<option value="1"> 1</option>
+<option value="2"> 2</option>
+<option value="3"> 3</option>
+<option value="4"> 4</option>
+<option value="5"> 5</option>
+<option value="6"> 6</option>
+<option value="7"> 7</option>
+<option value="8"> 8</option>
+<option value="9"> 9</option>
+<option value="10">10</option>
+</select>
+<br></br>
+<input type="submit" value="Reserve">
+</fieldset>
+</form>
+</div>
+<br></br>
+
+</body>
+</html>
