@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+.NormalBold {font-size: large; font-weight: bold; }
+.NormalCenter {font-size: large; text-align: center;}
+img.center { display: block; margin-top: auto; margin-left: auto; margin-right: auto;}
+h1.BigCenter {font-size: xxx-large; text-align:center;}
+h3.Big {font-size: x-large;}
+.padlr {padding-left: 2%; padding-right: 2%;}
+.padall {padding-bottom: 1%; padding-top: 1%; padding-left: 2%; padding-right: 2%;}
+
